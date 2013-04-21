@@ -1,2 +1,2 @@
-FTPBackup-Bukkitmanager-Addon
+FTPBackup - Bukkitmanager-Addon
 =============================
