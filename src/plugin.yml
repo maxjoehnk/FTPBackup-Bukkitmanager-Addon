@@ -1,0 +1,9 @@
+name: FTPBackupAddon
+main: org.efreak.bukkitmanager.addon.ftpbackup.FTPBackup
+version: 1.1
+description: >
+             This is an Addon which allows you to store Backups on a FTP Server
+website: http://dev.bukkit.org/server-mods/bukkitmanager
+author: e-freak
+prefix: BukkitmanagerFTPBackup
+depend: [Bukkitmanager]
