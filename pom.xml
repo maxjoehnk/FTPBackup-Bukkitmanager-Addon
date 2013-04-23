@@ -1,9 +1,4 @@
 <project>
-  <parent>
-    <artifactId>bukkitmanager</artifactId>
-    <groupId>org.efreak.bukkitmanager</groupId>
-    <version>Beta 1.4</version>
-  </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.efreak.bukkitmanager.addon.ftpbackup</groupId>
   <artifactId>ftpbackup</artifactId>
