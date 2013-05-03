@@ -81,8 +81,8 @@ public class FTPStorage extends BackupStorage {
 			ftp.changeWorkingDirectory(path);
 			InputStream input = new FileInputStream(backupFile);
 			if (logging) {
-				if (path != "") io.sendConsole(io.translate("FTPBackup.Uploading").replaceAll("%path%", path + "/" + backupFile.getName()));
-				else io.sendConsole(io.translate("FTPBackup.Uploading").replaceAll("%path%", backupFile.getName()));
+				if (path != "") io.sendConsole(io.translate("FTPBackup.Uploading").replaceAll("%location%", path + "/" + backupFile.getName()));
+				else io.sendConsole(io.translate("FTPBackup.Uploading").replaceAll("%location%", backupFile.getName()));
 			}
 			ftp.storeFile(backupFile.getName(), input);
 			input.close();
