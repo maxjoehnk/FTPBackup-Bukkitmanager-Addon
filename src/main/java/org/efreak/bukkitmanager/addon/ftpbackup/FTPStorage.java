@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 
+import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPReply;
 import org.apache.commons.net.ftp.FTPSClient;
@@ -74,6 +75,8 @@ public class FTPStorage extends BackupStorage {
 				io.sendConsoleError(io.translate("FTPBackup.LoginError"));
 				return false;
 			}
+			ftp.setFileType(FTP.BINARY_FILE_TYPE);
+			ftp.setFileTransferMode(FTP.COMPRESSED_TRANSFER_MODE);
 			ftp.enterLocalPassiveMode();
 			ftp.changeWorkingDirectory(path);
 			InputStream input = new FileInputStream(backupFile);
